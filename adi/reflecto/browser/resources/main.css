@@ -1,0 +1,12 @@
+#navi img,
+#navi th,
+#navi td,
+#navi > div > div > * {
+    display: none;
+}
+#navi td:first-child,
+#navi > div > div > a,
+#navi > div > div > table {
+    display: block;
+}
+

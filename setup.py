@@ -6,10 +6,13 @@ long_description = ''
 
 if os.path.exists("README.rst"):
     long_description = open("README.rst").read()
+    long_description += '\n\n' + open("docs/INSTALL.rst").read()
+    long_description += '\n\n' + open("docs/USAGE.rst").read()
+    long_description += '\n\n' + open("docs/CHANGES.rst").read()
 
 setup(name='adi.reflecto',
       version=version,
-      description='An UI-file-browser for the Plone-addon "Products.Reflecto"',
+      description='A file-browser-UI for the Plone-addon "Products.Reflecto".',
       long_description=long_description,
       classifiers=[
         "Framework :: Plone",
